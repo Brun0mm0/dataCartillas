@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-const excel = require('../controller/excel')
+const data = require('../controller/data')
 /* GET home page. */
 router.route('/')
-  .get(excel.excel)
+  .get(data.empresas)
 
 module.exports = router;
